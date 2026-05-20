@@ -356,7 +356,7 @@ master = load_cs_game_master()
 
 with st.sidebar:
     if MIKATEN_LOGO.exists():
-        st.image(str(MIKATEN_LOGO), use_container_width=True)
+        st.image(str(MIKATEN_LOGO), width="stretch")
     st.markdown("<div style='font-weight:900; letter-spacing:0.14em; text-align:center; margin:-6px 0 18px;'>MIKATEN</div>", unsafe_allow_html=True)
     st.header("Model")
     model_version = st.selectbox("モデルバージョン", ["v3.5", "v3.0"], index=0)
@@ -503,7 +503,7 @@ timeline_tab, wpa_tab, events_tab, raw_tab = st.tabs(["WP Timeline", "Top WPA", 
 with timeline_tab:
     st.markdown('<div class="mikaten-section-title">Balance Timeline</div>', unsafe_allow_html=True)
     st.markdown('<p class="mikaten-note">上に行くほどTeam A優勢、下に行くほど相手優勢。50%を中心線にした独自WP Balanceです。</p>', unsafe_allow_html=True)
-    st.image(str(chart_path), use_container_width=True)
+    st.image(str(chart_path), width="stretch")
 
     download_cols = st.columns(3)
     download_cols[0].download_button(
@@ -529,7 +529,7 @@ with wpa_tab:
     left, right = st.columns(2)
     with left:
         st.markdown('<div class="mikaten-section-title">Top WPA Events</div>', unsafe_allow_html=True)
-        st.dataframe(top_wpa_events(predictions, game_id), use_container_width=True)
+        st.dataframe(top_wpa_events(predictions, game_id), width="stretch")
     with right:
         st.markdown('<div class="mikaten-section-title">Summary</div>', unsafe_allow_html=True)
         st.json(summary)
@@ -537,7 +537,7 @@ with wpa_tab:
 with events_tab:
     st.markdown('<div class="mikaten-section-title">Event Log</div>', unsafe_allow_html=True)
     visible_cols = [c for c in ["event_id", "period", "clock", "home_score", "away_score", "event_type", "team_A_wp", "team_B_wp", "mikawa_wp", "mikawa_wpa", "description"] if c in game_df.columns]
-    st.dataframe(game_df[visible_cols], use_container_width=True)
+    st.dataframe(game_df[visible_cols], width="stretch")
 
 with raw_tab:
     extras = st.session_state.get("official_extras", {})
@@ -546,4 +546,4 @@ with raw_tab:
     else:
         for name, frame in extras.items():
             st.subheader(name)
-            st.dataframe(frame, use_container_width=True)
+            st.dataframe(frame, width="stretch")
