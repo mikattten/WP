@@ -1,0 +1,11 @@
+initial_wp:
+  base: 50
+  net_rating_weight: 0.8
+  oftg_weight: 0.25
+  dftg_weight: 0.25
+  home_bonus: 2.0
+  cs_bonus: 1.0
+  recent_form_weight: 0.5
+  matchup_weight: 0.5
+  min_wp: 5
+  max_wp: 95

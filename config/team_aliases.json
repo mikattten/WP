@@ -1,0 +1,84 @@
+{
+  "teams": [
+    {
+      "display_name": "シーホース三河",
+      "short_name": "三河",
+      "aliases": [
+        "三河",
+        "シーホース三河",
+        "SeaHorses Mikawa",
+        "MIKAWA"
+      ]
+    },
+    {
+      "display_name": "琉球ゴールデンキングス",
+      "short_name": "琉球",
+      "aliases": [
+        "琉球",
+        "琉球ゴールデンキングス",
+        "Ryukyu",
+        "RYUKYU"
+      ]
+    },
+    {
+      "display_name": "名古屋ダイヤモンドドルフィンズ",
+      "short_name": "名古屋D",
+      "aliases": [
+        "名古屋D",
+        "名古屋ダイヤモンドドルフィンズ",
+        "Nagoya D",
+        "NAGOYA D"
+      ]
+    },
+    {
+      "display_name": "長崎ヴェルカ",
+      "short_name": "長崎",
+      "aliases": [
+        "長崎",
+        "長崎ヴェルカ",
+        "Nagasaki",
+        "NAGASAKI"
+      ]
+    },
+    {
+      "display_name": "千葉ジェッツ",
+      "short_name": "千葉J",
+      "aliases": [
+        "千葉J",
+        "千葉ジェッツ",
+        "Chiba J",
+        "CHIBA J"
+      ]
+    },
+    {
+      "display_name": "群馬クレインサンダーズ",
+      "short_name": "群馬",
+      "aliases": [
+        "群馬",
+        "群馬クレインサンダーズ",
+        "Gunma",
+        "GUNMA"
+      ]
+    },
+    {
+      "display_name": "宇都宮ブレックス",
+      "short_name": "宇都宮",
+      "aliases": [
+        "宇都宮",
+        "宇都宮ブレックス",
+        "Utsunomiya",
+        "UTSUNOMIYA"
+      ]
+    },
+    {
+      "display_name": "アルバルク東京",
+      "short_name": "A東京",
+      "aliases": [
+        "A東京",
+        "アルバルク東京",
+        "Alvark Tokyo",
+        "A TOKYO"
+      ]
+    }
+  ]
+}
